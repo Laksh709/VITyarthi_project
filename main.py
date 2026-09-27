@@ -14,5 +14,8 @@ while True:
     if choice == 1:
         result = wallet.get_balance()
         print(f"Your current balance is {result}")
-    
+    elif choice ==2 :
+            currency = input("Enter your preffered currency")
+            amount = int(input("Enter your desiered amount "))
+            result1 = wallet.deposit()
 
