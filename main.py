@@ -15,7 +15,16 @@ while True:
         result = wallet.get_balance()
         print(f"Your current balance is {result}")
     elif choice ==2 :
-            currency = input("Enter your preffered currency")
-            amount = int(input("Enter your desiered amount "))
-            result1 = wallet.deposit()
+        currency = input("Enter your preffered currency")
+        amount = int(input("Enter your desiered amount "))
+        result1 = wallet.deposit()
+        print(result1)
+    elif choice ==3:
+        print("For your information - We deduct a fee of 0.02 percent of your amount as processing charges ")
+        source_currency = input("Which currency do you want to withdraw from?")
+        target_currency = input("Which currency you want your withdrawn money in??")
+        result_2 = wallet.withdraw_with_conversion()
+        print(result_2)
+    
+
 
