@@ -25,6 +25,13 @@ while True:
         target_currency = input("Which currency you want your withdrawn money in??")
         result_2 = wallet.withdraw_with_conversion()
         print(result_2)
+    elif choice == 4:
+        print(f"Your current balance is {wallet.get_balance()}")
+        file_handler.save_data()
+        print("Thank You for using our services ")
+        break
+
+
     
 
 
