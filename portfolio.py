@@ -9,7 +9,7 @@ class Wallet:
        if amount <= 0:
            return False
        currency = currency.upper().strip()
-       self.__balances[currency]== self.__balances.get(currency,0.0) + round(amount,2)
+       self.__balances[currency]= self.__balances.get(currency,0.0) + round(amount,2)
        return True, f"Successfully deposited {amount:.2f} {currency}."
 
     def withdraw_with_conversion(self, source_curr, target_curr, source_amount, api_client, fee_percent=0.02):
